@@ -1,0 +1,35 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "enginets"
+  ],
+  "name": "enginets",
+  "version": "0.2.0",
+  "module": "commonjs",
+  "declaration": true,
+  "strict": true,
+  "main": "build/main.js",
+  "types": "src/main.ts",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    "default": "./src/main.js",
+    "engine": "./src/core/engine/engine.js",
+    "engineRender": "./src/core/engine/engineRender.js",
+    "component": "./src/core/component.js",
+    "gameObject": "./src/core/gameObject.js",
+    "iObject": "./src/core/ifaces/iobject.js",
+    "iComponent": "./src/core/ifaces/icomponent.js"
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
